@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  web:
+    build: 
+      context: .
+    ports:
+        - "4000:3000"
+    restart: unless-stopped
