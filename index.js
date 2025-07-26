@@ -7,6 +7,13 @@ app.get("/", (req, res) => {
   res.status(200).json({
     message: "Hello, test from cicd",
   });
+
+});
+app.get("/healthcheck", (req, res) => {
+  res.status(200).json({
+    message: "server is healthy",
+  });
+
 });
 
 app.listen(PORT, () => {
